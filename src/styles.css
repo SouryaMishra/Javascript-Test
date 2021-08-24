@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap');
+
+/*resets*/
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Urbanist", Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+header .navbar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+
+header, footer{
+    background: #000;
+}
+
+.navbar form{
+    margin: 0 auto;
+    width: 60%;
+    max-width: 400px;
+}
+
+form input{
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+form input[type="search"]{
+    width: 80%;
+}
+form input[type="submit"]{
+    cursor:pointer;
+    background: #fff;
+}
+
+form input[type="submit"]:hover{
+    background: red;
+    color: #fff;
+}
+
+header h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container{
+    width: 80%;
+    max-width: 1500px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    min-height: calc(80vh + 12px);
+}
+
+.container .card{
+    padding: 1em;
+    box-shadow: 0 0 5px 2px #e0e0e0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.card img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+footer{
+    text-align: center;
+    margin-top: 1rem;
+    font-size:16px;
+    padding: 1rem 0;
+}
+
+footer p{
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    header .navbar{
+    width: 90%;
+    }
+
+    .navbar form{
+        margin-right: 0;
+    }
+
+    form input[type="search"]{
+        width: 180px;
+    }
+
+}

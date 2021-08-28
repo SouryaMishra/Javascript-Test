@@ -14,8 +14,15 @@ body{
     line-height: 1.5rem;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    margin-bottom: 2rem;
+}
+
 header .navbar{
     width: 80%;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     justify-content: center;

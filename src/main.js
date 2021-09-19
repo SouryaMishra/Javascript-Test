@@ -69,7 +69,6 @@ function debounce(searchPlayers, delay = 800) {
 
         timerId = setTimeout(() => {
             searchPlayers(e.target.value);
-            clearTimeout(timerId)
         }, delay)
     }
 }
